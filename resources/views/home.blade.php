@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 <body>
     <header>
@@ -46,7 +48,7 @@
         <div class="hero-overlay">
             <div class="hero-content">
                 <h1 id="hero-title">PQRS Nostre</h1>
-                <p>Gestiona Peticiones, Quejas, Reclamos y Sugerencias de forma rápida, centralizada y trazable.</p>
+                <p class= "text-hero" >Gestiona Peticiones, Quejas, Reclamos y Sugerencias de forma rápida, centralizada y trazable.</p>
                 <a href="#comenzar" class="btn hero-btn">Comenzar</a>
             </div>
         </div>
@@ -101,11 +103,12 @@
             <div class="cards">
                 <article class="card"><h3>Petición</h3><p>Solicitud de información o requerimiento específico.</p></article>
                 <article class="card"><h3>Queja</h3><p>Inconformidad frente a una situación o servicio.</p></article>
-                <article class="card"><h3>Reclamo</h3><p>Exigencia por un derecho vulnerado o incumplimiento.</p></article>
+                 <article class="card"><h3>Reclamo</h3><p>Exigencia por un derecho vulnerado o incumplimiento.</p></article>
                 <article class="card"><h3>Sugerencia</h3><p>Propuesta de mejora para procesos o servicios.</p></article>
             </div>
         </div>
-    </section>
+    </section> 
+
 
     <!-- Preguntas frecuentes -->
     <section class="faq" aria-labelledby="faq-title">
@@ -129,16 +132,42 @@
     <!-- CTA final -->
     <section class="cta" id="comenzar" aria-labelledby="cta-title">
         <div class="container">
-            <h2 id="cta-title">Listo para mejorar tu gestión de PQRS</h2>
+            <h2 class="cta-title">Listo para mejorar tu gestión de PQRS</h2>
             <p>Centraliza y agiliza tu atención al usuario con Nostre.</p>
             <a href="#" class="btn register">Crear cuenta</a>
         </div>
-    </section>
+    </section> 
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Nostre. Todos los derechos reservados.</p>
-    </footer>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo / Marca -->
+    <div class="footer-brand">
+      <img src="{{ asset('img/Logo-nostre.png') }}" alt="Logo Nostre" class="footer-logo">
+      <span class="footer-name">Nostre</span>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>Email: soporte@nostre.com</p>
+      <p>Teléfono: +57 123 456 7890</p>
+    </div>
+
+<div class="footer-social">
+  <h4>Síguenos</h4>
+  <div class="social-icons">
+    <a href="https://x.com/GNostre97196" aria-label="Facebook"><i class="bi bi-x"></i></a>
+    <a href="https://x.com/GNostre97196" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="http://www.youtube.com/@GrupoNostre" aria-label="Instagram"><i class="bi bi-youtube"></i></a>
+  </div>
+</div>
+
+  <!-- Derechos -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Nostre. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
 
     <script src="{{ asset('js/home.js') }}"></script>
 </body>
