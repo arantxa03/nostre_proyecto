@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Nostre</title>
+    <title>Home - Nostre-PQRS</title>
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
 
             <!-- Botones -->
             <div class="nav-buttons">
-                <a href="#" class="btn login">Iniciar Sesión</a>
+                <a href="{{ route('login') }}" class="btn login">Iniciar Sesión</a>
                 <a href="#" class="btn register">Registrarse</a>
             </div>
 
@@ -156,9 +156,9 @@
 <div class="footer-social">
   <h4>Síguenos</h4>
   <div class="social-icons">
-    <a href="https://x.com/GNostre97196" aria-label="Facebook"><i class="bi bi-x"></i></a>
-    <a href="https://x.com/GNostre97196" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-    <a href="http://www.youtube.com/@GrupoNostre" aria-label="Instagram"><i class="bi bi-youtube"></i></a>
+    <a href="https://x.com/GNostre97196" target="_blank" aria-label="Facebook"><i class="bi bi-x"></i></a>
+    <a href="https://x.com/GNostre97196" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="http://www.youtube.com/@GrupoNostre" target="_blank" aria-label="Instagram"><i class="bi bi-youtube"></i></a>
   </div>
 </div>
 
