@@ -5,14 +5,24 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            height: 100vh;
-            background: linear-gradient(135deg, #1e1e2f, #343458, #6b73ff);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #242446, #4c4cac, #6b73ff);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animación del fondo */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
         .login-container {
             background: rgba(255, 255, 255, 0.1);
