@@ -25,7 +25,7 @@
             <button type="submit" class="btn">Ingresar</button>
 
             <div class="extra-links">
-                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                <p><a href="{{ route('recuperar-contrasena') }}">¿Olvidaste tu contraseña?</a></p>
                 <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
             </div>
         </form>
